@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 96" width="96" height="72" shape-rendering="crispEdges">
+  <style>
+    .tail { transform-origin: 80px 76px; animation: wag 1.2s steps(1, end) infinite; }
+    .eye  { transform-box: fill-box; transform-origin: center; animation: blink 4.5s infinite; }
+    @keyframes wag {
+      0%   { transform: rotate(-12deg); }
+      25%  { transform: rotate(0deg); }
+      50%  { transform: rotate(12deg); }
+      75%  { transform: rotate(0deg); }
+      100% { transform: rotate(-12deg); }
+    }
+    @keyframes blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      95%           { transform: scaleY(0.1); }
+    }
+  </style>
+
+  <!-- tail -->
+  <g class="tail" fill="#E8581C">
+    <rect x="80"  y="72" width="16" height="8"/>
+    <rect x="96"  y="64" width="8"  height="16"/>
+    <rect x="96"  y="48" width="8"  height="16"/>
+    <rect x="104" y="40" width="8"  height="8" fill="#EBE5D6"/>
+  </g>
+
+  <!-- body -->
+  <g fill="#E8581C">
+    <rect x="24" y="0"  width="8"  height="8"/>
+    <rect x="64" y="0"  width="8"  height="8"/>
+    <rect x="24" y="8"  width="16" height="8"/>
+    <rect x="56" y="8"  width="16" height="8"/>
+    <rect x="24" y="16" width="48" height="24"/>
+    <rect x="16" y="40" width="64" height="40"/>
+  </g>
+
+  <!-- chest -->
+  <rect x="32" y="48" width="32" height="32" fill="#EBE5D6"/>
+
+  <!-- face -->
+  <rect class="eye" x="32" y="24" width="8" height="8" fill="#2b1d14"/>
+  <rect class="eye" x="56" y="24" width="8" height="8" fill="#2b1d14"/>
+  <rect x="40" y="32" width="16" height="8" fill="#F4B9A8"/>
+
+  <!-- paws -->
+  <g fill="#E8581C">
+    <rect x="16" y="80" width="24" height="8"/>
+    <rect x="56" y="80" width="24" height="8"/>
+  </g>
+</svg>
